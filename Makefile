@@ -7,24 +7,50 @@
 SHELL=/usr/bin/sh
 .SUFFIXES:
 
-INCLUDE = -I/usr/X11R6/include/
-LIBDIR  = -L/usr/X11R6/lib -L/usr/lib
-LIBS = -lX11 -lXi -lXmu -lm -lGL -lGLU -lglut -lstdc++ -lsupc++
-ARGS = -g -pedantic -Wall #-pg
+INCLUDE := -I/usr/X11R6/include/
+LIBDIR  := -L/usr/X11R6/lib -L/usr/lib
+LIBS += -lX11 
+LIBS += -lXi 
+LIBS += -lXmu 
+LIBS += -lm 
+LIBS += -lGL 
+LIBS += -lGLU 
+LIBS += -lglut 
+LIBS += -lstdc++ 
+LIBS += -lsupc++
+ARGS += -g 
+ARGS += -pedantic 
+ARGS += -Wall
+#ARGS += -pg
 
 SOURCES = $(wildcard *.cpp)
 HEADERS = $(wildcard *.hpp)
-OBJECTS = $(SOURCES:%.cpp=%.o)
+OBJECTS = $(SOURCES:%.cpp=build/%.o)
 
-TARGET = bin/geodefunc
+TARGET := bin/geodefunc
 
+.PHONY: all
 all: $(TARGET)
 
-clean:
-	rm -f *.o core* *~ $(TARGET) gmon.out
+.PHONY: clean
+clean: cl
+	@echo cleaning build targets
+	rm -rf $(TARGET)
+	rm -rf build
+
+.PHONY: cl
+cl:
+	@echo massaging out editing artifacts
+	rm -rf core* *~ 
+	chmod -xxx *.hpp *.cpp Makefile svn.ignore
+	chmod +xxx bin/*
 
 $(TARGET): $(OBJECTS)
-	$(CC) $(ARGS) $(LIBDIR) $^ -o $@ $(LIBS)
+	@echo linking "$(dir $<)*.o" to $@
+	@mkdir -p $(dir $@)
+	@$(CC) $(ARGS) $(LIBDIR) $^ -o $@ $(LIBS)
 
-$(OBJECTS): %.o: %.cpp $(HEADERS)
-	$(CC) $(ARGS) $(INCLUDE) -c $< -o $@
+$(OBJECTS): build/%.o: %.cpp $(HEADERS)
+	@echo $<" --$(CC)--> "$@
+	@mkdir -p $(dir $@)
+	@$(CC) $(ARGS) $(INCLUDE) -c $< -o $@
