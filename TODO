@@ -1,0 +1,11 @@
+TODO: pre-stressed materials instead of springFactor, DivisionCleanup(), etc.
+TODO: multiple pressure regions
+TODO: tokenizing, input-output symmetric, pretty io
+TODO: develop general energy-error strategy
+TODO: explore Bulirsch-Stoer integration
+TODO: adaptive step size integration
+TODO: UI code cleanup
+TODO: rendering code cleanup
+TODO: buoyancy forces
+TODO: collision detection & resolution
+TODO: direct image capture

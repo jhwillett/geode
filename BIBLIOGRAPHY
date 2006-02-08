@@ -1,0 +1,116 @@
+Bibliography for Geode, Copyright 2003 (C) Jesse H. Willett
+
+This contains a list of sources I have consulted while working
+on this project.  As this is an ASCII text document, I have
+indiscriminately used quotation marks to indicate titles of both
+books and articles.
+
+So far, I'm trying to err on the side of this list being too long,
+not too short.  
+
+* Inspirational:
+
+R. Buckminster Fuller
+"Operating Manual for Spaceship Earth"
+Aeonian Press, 1969
+
+R. Buckminster Fuller w/ Kiyoshi Kuromiya, Adjuvant
+"Critical Path"
+St. Martin's Press, New York, 1981
+
+TODO: R. Buckminster Fuller, "Synergetics"
+
+Robert Snyder
+"Buckminster Fuller: An Autobiographical Monologue/Scenario"
+St. Martin's Press, New York, 1980
+
+TODO: vacuum balloons: Archimedes and Francesco de Lana-Terzi?
+
+* General Physics & Math:
+
+TODO: decent physics text
+
+http://webpages.ursinus.edu/lriley/courses/p212/lectures/node22.html
+
+http://www.rit.edu/~agysps/courses/312sclp/cl_wkshts/isoth_ad_ideal.htm
+
+Martin and Patricia Perkins
+"Advanced Mathematics: Book 1"
+"Advanced Mathematics: Book 2"
+Unwin Hyman, 1990
+
+Matthew T. Mason
+"Mechanics of Robotic Manipulation"
+MIT Press, 2001
+
+* Convex Hull algorithm(s):
+
+Joseph O'Rourke
+"Computational Geometry in C," second ed.
+Cambridge University Press, 1998
+
+* Numeric Integration (particularly Runge-Kutta methods):
+
+David M. Bourg
+"Physics for Game Developers,"
+O'Reilly & Associates, January 2002
+
+William H. Press, Saul A. Teukolsky, William T. Vetterling, Brian P. Flannery
+"Numerical Recipes in C++," second ed.
+Cambridge University Press, 2002
+
+Collision Response: Bouncy, Trouncy Fun
+Devil in the Blue-Faceted Dress: Real-Time Cloth Animation
+Lone Game Developer Battles Physics Simulator
+
+* Support: 
+
+Mason Woo, Jackie Neider, Tom Davis, Dave Shreiner
+"OpenGL Programming Guide," third ed.
+Addison Wesley, 1999
+
+Dave Shreiner
+"OpenGL Reference Manual," third ed.
+Addison Wesley, 1999
+
+Bjarne Stroustrup
+"The C++ Programming Language," third ed.
+Addison Wesley, 1997
+
+Brian W. Kernighan and Dennis M. Ritchie
+"The C Programming Language," second ed.
+Prentice Hall 1988
+
+James O. Coplein
+"Advanced C++: Programming Styles and Idioms"
+Addison Wesley, 1992
+
+Thomas J. Glover
+"Pocket Ref," third ed.
+Sequoia Publishing, 2002
+
+Andrew Oram and Steve Talbot
+"Managing Projects with make"
+O'Reilly 1991
+
+Richard M. Stallman and Roland H. Pesch
+"Debugging with GDB", edition 4.09 for GDB version 4.9
+Free Software Foundation, August 1993
+
+Leslie Lamport
+"LaTex: A Document Preperation System" second ed.
+Addison Wesley, 1994
+
+James R. Munkers
+"Topology: A First Course"
+Prentice-Hall, 1975
+
+Donald E. Knuth
+"The Art of Computer Programming, volume 1", third ed
+"The Art of Computer Programming, volume 2", third ed
+"The Art of Computer Programming, volume 3", third ed
+Addison Wesley, 1997
+
+Matt Welsh, Matthias Kalle Dalheimer, Lar Kaufman
+"Running Linux", third ed.
+O'Reilley 1999
