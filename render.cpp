@@ -688,6 +688,13 @@ void Render::KeyPressed (unsigned char key, int x, int y)
     sc.InvertThroughOrigin();
     break;
 
+  case 'a':
+    sc.AddCrossScaffolding(false);
+    break;
+  case 'A':
+    sc.AddDualScaffolding();
+    break;
+
   case 'b':
     sc.physics.AddSpin(1.0);
     break;
