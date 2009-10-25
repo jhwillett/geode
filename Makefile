@@ -4,7 +4,7 @@
 # email: jhw@lmi.net, jhwjhw@gmail.com
 # web:   http://users.lmi.net/~jhw
 
-SHELL=/usr/bin/sh
+SHELL=/bin/sh
 .SUFFIXES:
 
 INCLUDE := -I/usr/X11R6/include/
