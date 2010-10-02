@@ -42,7 +42,7 @@ clean: cl
 cl:
 	@echo massaging out editing artifacts
 	rm -rf core* *~ 
-	chmod -xxx *.hpp *.cpp Makefile svn.ignore
+	chmod -xxx *.hpp *.cpp Makefile
 	chmod +xxx bin/*
 
 $(TARGET): $(OBJECTS)
